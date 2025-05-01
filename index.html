@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>24/7 Water Plant Launch</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background:white;
+      color:black;
+	  font-weight:bold;
+      padding: 20px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+	  background:black;
+      max-width: 1200px;
+      margin: auto;
+      animation:colors 2s infinite alternate;
+      border-radius: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+@keyframes colo{from{background:linear-gradient(to left,green,blue,red);}
+                  to{background:linear-gradient(to right,green,red,blue);}
+    }
+	.left {
+      flex: 1;
+      min-width: 300px;
+      animation:colors2 2s infinite alternate;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+	@keyframes colors{from{background:linear-gradient(to left,red,green,blue);}
+                  to{background:linear-gradient(to left,blue,green,red);}
+    }
+
+
+    .left img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .left .water-quote {
+      font-style: italic;
+      color: white;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .right {
+      flex: 2;
+      padding: 30px;
+
+    }
+
+    .right h1 {
+      color:white;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: yellow;
+	  font-weight:bold;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      background: #d1f3ff;
+      padding: 15px;
+      animation:zoom 2s infinite alternate;
+      
+	  border-left: 5px solid #00bfff;
+      margin: 20px 0;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .feature-card {
+      flex: 1 1 45%;
+      background: #f0fcff;
+      border: 1px solid #b3ecff;
+      padding: 15px;
+	  animation:zoom 2s infinite alternate;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+	@keyframes zoom{
+	         from{transform:scale(0.8);}
+			 to{transform:scale(1);}
+			 }
+
+    .feature-card h3 {
+      color: #0099cc;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      color:white;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+      }
+
+      .features {
+        flex-direction: column;
+      }
+
+      .feature-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Left Panel -->
+    <div class="left">
+      <img src="ajay.jpg" alt="Water Plant" />
+      <div class="water-quote">“Water is life. Let’s keep it pure and flowing.”</div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right">
+      <h1>💧 24/7 Water Plant!</h1>
+      <div class="subtitle">Posted by Ajay | May 1, 2025</div>
+
+      <p>We are thrilled to share the launch of our brand-new 24/7 Water Plant! With a commitment to health, hygiene, and hydration, our facility is open all day, every day to serve clean and purified water to the community.</p>
+
+      <div class="highlight">✅ Clean, Safe & Affordable Water – Anytime, Anywhere!</div>
+
+      <p>Whether it's a late-night refill or early morning supply, our plant is equipped with fully automated purification systems, real-time water quality monitoring, and user-friendly refill stations.</p>
+
+      <h2>🌟 Key Features</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>24/7 Availability</h3>
+          <p>Water when you need it—day or night.</p>
+        </div>
+        <div class="feature-card">
+          <h3>RO + UV Purification</h3>
+          <p>Clean, mineral-rich water every time.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Smart Refill Kiosk</h3>
+          <p>Quick and contactless access to water.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Affordable Pricing</h3>
+          <p>Pure water for every budget.</p>
+        </div>
+      </div>
+
+      <p>We thank our supporters and community members for trusting us. Together, let’s build a healthier and hydrated future!</p>
+
+      <footer>© 2025 Ajay | Designed with 💙</footer>
+    </div>
+  </div>
+</body>
+</html>
